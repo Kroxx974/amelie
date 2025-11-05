@@ -45,7 +45,7 @@ class Root {
     }
 }
 let flowerImg = new Image();
-flowerImg.src = "../assets/flowers.png";
+flowerImg.src = "assets/flowers.png";
 class Flower {
     constructor(x,y,size){
         this.x = x;
