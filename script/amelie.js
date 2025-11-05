@@ -3,6 +3,7 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+
 let cos= Math.cos;
 let sin = Math.sin;
 class Root {
@@ -71,13 +72,13 @@ function X(t){
     return canvas.width/2+(-115*cos(1*t)+2*cos(2*t)-12*cos(3*t)+7*cos(4*t)-6*cos(5*t)+6*cos(6*t)-3*cos(7*t)+3*cos(8*t)
     -cos(9*t)-2*cos(10*t)+4*cos(11*t)+cos(12*t)-2*cos(13*t)+8*cos(14*t)+2*cos(15*t)-cos(16*t)+5*cos(17*t)+2*cos(18*t)
     -cos(19*t)+3*cos(20*t)-cos(21*t)+cos(22*t)-2*cos(23*t)+4*cos(24*t)-2*cos(25*t)+2*cos(26*t)-3*cos(27*t)
-    +2*cos(28*t)-cos(29*t)+cos(30*t)-cos(31*t)+cos(32*t)-cos(33*t)+cos(34*t)-cos(35*t)+cos(40*t))*3
+    +2*cos(28*t)-cos(29*t)+cos(30*t)-cos(31*t)+cos(32*t)-cos(33*t)+cos(34*t)-cos(35*t)+cos(40*t))*3*canvas.width/1016
 }
 
 function Y(t){
     return  canvas.height/2+(11*cos(1*t)+2*cos(2*t)-8*cos(3*t)+7*cos(4*t)-5*cos(5*t)-6*cos(6*t)+6*cos(7*t)-7*cos(8*t)-cos(9*t)+2*cos(10*t)-9*cos(11*t)+cos(12*t)-4*cos(13*t)- 
 9*cos(14*t)+5*cos(15*t)-2*cos(17*t)+11*cos(18*t)-2*cos(19*t)-cos(20*t)-2*cos(21*t)+3*cos(22*t)+cos(23*t)+cos(24*t)-cos(25*t)-2*cos(26*t)+3*cos(27*t)-cos(28*t)+ 
-cos(29*t)-cos(30*t)+cos(32*t)-cos(34*t)-cos(38*t)+cos(39*t)+cos(41*t)+cos(51*t))*3
+cos(29*t)-cos(30*t)+cos(32*t)-cos(34*t)-cos(38*t)+cos(39*t)+cos(41*t)+cos(51*t))*3*canvas.height/980
 }
 let lastTime = 0;
 let dt = 0;
